@@ -1,0 +1,11 @@
+#Custom {
+    justify-Content: flex-start;
+    color: #df1b29;
+    height: 100%;
+}
+#Allergy {
+    position: absolute;
+    top: .5%;
+    left: .5%;
+    font-size: 15px;
+}
