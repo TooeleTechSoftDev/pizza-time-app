@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './css/main.css';
+import '../css/main.css';
 
-class Signup extends Component {
+class Signin extends Component {
   render() {
     return (
         <div id="loginPage" className="page-wrap active">
@@ -33,4 +33,4 @@ class Signup extends Component {
 }
 
 
-export default Signup;
+export default Signin;
