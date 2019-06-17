@@ -9,3 +9,15 @@
     left: .5%;
     font-size: 15px;
 }
+.choosers {
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+}
+.selword {
+    margin-left: 5%;
+    display: block;
+    margin-top: .15em;
+    margin-bottom: 0em;
+    line-height: 1;
+}
