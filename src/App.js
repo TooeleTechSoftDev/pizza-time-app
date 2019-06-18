@@ -7,7 +7,7 @@ import Deals from './views/deals'
 import Orders from './views/Orders'
 import Signin from './views/signin'
 import ItemDetail from './views/ItemDetail'
-// import Signup from './views/signup'
+import Signup from './views/signup'
 import './App.css'
 
 // Very simple layout for now; Eventually need to set up navigation
@@ -36,7 +36,7 @@ class App extends Component {
     {{
       "specials": (<Specials clickFunc={this.handleChoice.bind(this,"itemDetail")}/>),
       "orders": (<Orders />),
-      // "signup": (<Signup />),
+      "signup": (<Signup />),
       "orderForm": (<OrderForm />),
       "deals": (<Deals />),
       "account": (<Accounts />),
@@ -46,6 +46,8 @@ class App extends Component {
     }
       <div style={{height: 50, maxWidth: "600px"}}>
       <button onClick={this.handleChoice.bind(this, "specials")}>Specials</button>
+      <button onClick={this.handleChoice.bind(this, "signup")}>Signup</button>
+      <button onClick={this.handleChoice.bind(this, "signin")}>Signin</button>
       <button onClick={this.handleChoice.bind(this, "orders")}>Orders</button>
       <button onClick={this.handleChoice.bind(this, "deals")}>Deals</button>
       <button onClick={this.handleChoice.bind(this, "account")}>Account</button>

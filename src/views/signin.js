@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import '../css/main.css';
 
 class Signin extends Component {
+ 
   render() {
     return (
         <div id="loginPage" className="page-wrap active">
         {/* <div id="i">
-            <div>i</div>
+            <div id="ii">i</div>
                 <span>The password is secret</span>
             </div> */}
             <div id="login-wrapper">
