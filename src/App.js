@@ -8,7 +8,7 @@ import Orders from './views/Orders'
 import Signin from './views/signin'
 import ItemDetail from './views/ItemDetail'
 import Signup from './views/signup'
-import './App.css'
+import './css/main.css'
 
 // Very simple layout for now; Eventually need to set up navigation
 class App extends Component {

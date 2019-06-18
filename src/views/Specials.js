@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Specials.css';
+import '../css/main.css'
 
 
 export default class Specials extends Component {
