@@ -44,7 +44,7 @@ class App extends Component {
       "itemDetail": (<ItemDetail />),
     }[this.state.viewShowing]
     }
-      <div style={{height: 50, minWidth: "100vw"}}>
+      <div style={{height: 50, maxWidth: "600px"}}>
       <button onClick={this.handleChoice.bind(this, "specials")}>Specials</button>
       <button onClick={this.handleChoice.bind(this, "orders")}>Orders</button>
       <button onClick={this.handleChoice.bind(this, "deals")}>Deals</button>
