@@ -9,21 +9,16 @@ export default class Customize extends Component {
     //    }
 
     render() {
-        var lhs1 = 0;
-        var ws1 = 0;
-        var rhs1 = 0;
-        var lhs2 = 0;
-        var lhs3 = 0;
         function s1(l, w, r, id) {
-            if (l == 1) {
+            if (l === 1) {
                 w = 0;
                 r = 0;
             } /* Left half select, Bounding */
-            if (w == 1) {
+            if (w === 1) {
                 l = 0;
                 r = 0;
             } /* Whole Select, Bounding */
-            if (r == 1) {
+            if (r === 1) {
                 l = 0;
                 w = 0;
             } /* Right half select, Bounding*/
@@ -33,11 +28,11 @@ export default class Customize extends Component {
             if (l + w + r > 1) {
                 /* Error out method here, Tampering/fault found */
             } /* Error/Tampering, Bounding to avoid faults/issues */
-            return (lhs1 + 10)
+            return ("left is "+l+"- whole is "+w+"- right is "+r)
         }  /* Incomplete, Need method for storing, retriving, sending custom list for order */
         function Swap(x, id, side) {
             var item = document.getElementById(id);
-            if (x == 1) {
+            if (x === 1) {
                 /* item.getElementsByClassName(side)[0].style.color = "#222"; */
             } /* turns Color/element on */
             else {
@@ -89,8 +84,9 @@ export default class Customize extends Component {
                             <option value="nonech">None</option>
                         </select> {/*Pizza Cheese Amount Choices*/}
                     </div> {/* Main pizza Customization*/}
-                    Value is {s1(0, 1, 0)} {lhs1}  {/*Entry point, example.  Use of Oneclick per left/right/whole, Incomplete */}
-                    <br />wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer aTHeEkraldferwaer dfwe wrwe fd werwedfer q wwerwer qer
+                    Value is {s1(0, 1, 0)}  {/*Entry point, example.  Use of Oneclick per left/right/whole, Incomplete */}
+                    <br />
+                    Second Line
                 </div> {/*Overall body*/}
             </div>
         )
