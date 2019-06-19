@@ -23,6 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Visual Studio
+/.vs
 **/*.suo
 
 # databases
