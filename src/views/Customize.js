@@ -44,12 +44,15 @@ export default class Customize extends Component {
 
         return (
             <div className="App" id="Custom">
-                <div className="App-header">
-                    Pizza<br />Customization
-                </div> {/*Head Banner Space*/}
-                <div id="Allergy">
-                    <input type="checkbox" name="Alergy" value="allergy" /> Allergic
+                <div className="App-header" style={{ display: "inline-block", maxWidth: "600px" }}>
+                    <div id="Allergy">
+                        <input type="checkbox" name="Alergy" value="allergy" /> Allergic
                 </div> {/*Allergy*/}
+                    <div style={{ width: "95%", float: "right", marginTop: "1.5%" }}>
+                        Pizza<br />Customization
+                    </div>     {/*Center Text*/}
+                </div> {/*Head Banner Space*/}
+
                 <div style={{ display: "inline-block", width: "100%" }}>
                     <div id="Customimg" style={{ float: "right", height: "300px", width: "60%", backgroundColor: "aqua" }}>
                         det det det

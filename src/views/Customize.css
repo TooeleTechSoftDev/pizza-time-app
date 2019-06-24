@@ -4,9 +4,12 @@
     height: 100%;
 }
 #Allergy {
-    position: absolute;
+    float: left;
+    width: 5%;
+    text-align: left;
+    /*position: absolute; 
     top: .5%;
-    left: .5%;
+    left: .5%; */
     font-size: 15px;
 }
 .choosers {
