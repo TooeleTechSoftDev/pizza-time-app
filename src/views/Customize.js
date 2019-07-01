@@ -41,7 +41,6 @@ export default class Customize extends Component {
             return (x, "set")
         } /* Incomplete, Need to setup ID of ingrediants/then classnames of right/whole/left */
 
-
         return (
             <div className="App" id="Custom">
                 <div className="App-header" style={{ display: "inline-block", maxWidth: "600px" }}>

@@ -10,8 +10,8 @@ export default class Specials extends Component {
     render() {
 
         return (
-        <div className="App" style={{backgroundColor: "#345eb5"}}>
-      <header className="App-header">
+        <div className="SpecialsApp" style={{backgroundColor: "#345eb5"}}>
+                <header className="SpecialsApp-header">
         Today's Specials  
       </header>
        

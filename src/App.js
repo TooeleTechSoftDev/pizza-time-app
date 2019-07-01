@@ -8,6 +8,7 @@ import Orders from './views/Orders'
 import Signin from './views/signin'
 import ItemDetail from './views/ItemDetail'
 import './App.css'
+import Customize from './views/Customize';
 
 // Very simple layout for now; Eventually need to set up navigation
 class App extends Component {
@@ -39,14 +40,16 @@ class App extends Component {
       "deals": (<Deals />),
       "account": (<Accounts />),
       "signin": (<Signin />),
-      "itemDetail": (<ItemDetail />),
+              "itemDetail": (<ItemDetail />),
+              "customize": (<Customize />),
     }[this.state.viewShowing]
     }
       <div style={{height: 50, minWidth: "100vw"}}>
       <button onClick={this.handleChoice.bind(this, "specials")}>Specials</button>
       <button onClick={this.handleChoice.bind(this, "orders")}>Orders</button>
       <button onClick={this.handleChoice.bind(this, "deals")}>Deals</button>
-      <button onClick={this.handleChoice.bind(this, "account")}>Account</button>
+              <button onClick={this.handleChoice.bind(this, "account")}>Account</button>
+              <button onClick={this.handleChoice.bind(this, "customize")}>Customize(temp)</button>
       </div>
     </div>
   );
