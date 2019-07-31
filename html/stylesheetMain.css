@@ -1,0 +1,154 @@
+<style type="text/css">
+    html, body, h1, h2, h3, h4, ul, ol, li, p, a img{
+        padding: 0;
+        border: 0;
+        margin: 0;
+}
+
+
+    body {
+        background: #EFE6E6;
+        font-family: "Crimson Text";
+}
+            
+
+    .logo{
+        margin-top: 0px;
+        background: #FFFFFF;
+}
+
+    h2{
+    
+    margin-top: 50px;
+    margin-bottom: 1px;
+    padding-bottom: 0px;
+    font-size: 35px;
+}
+
+.special{
+    display: inline-grid; 
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 50% 5% 25% 25%;
+    background: #941212;
+    color: #FFFFFF;
+    margin: 0px;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0px;
+    
+}
+.special h2{
+    font-weight: normal;
+    
+}
+
+.special h3{
+    font-weight: normal;
+}
+
+.SpecialName{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 56px;
+    grid-column: 1;
+    grid-row: 1;
+}
+.SpecialCost{
+    margin-top: 12px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 50px;
+    grid-column: 1;
+    grid-row: 3;
+    border-top: solid #FFFFFF 4px;
+    border-right: solid #941212 10px;
+    border-left: solid #941212 10px;
+}
+.SpecialIMG{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    grid-column: 2/2;
+    grid-row: 1/ span 3;
+    float: right;
+    object-position: 0px -68px;
+    width: 650px;
+    height: 500px;
+}
+.nav{
+    list-style-type:none;
+    display: inline-grid; 
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100%;
+    margin: 0px;
+    width: 100%;
+    height: 100PX;
+    background: #C7BDBD;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+.PIZZA{
+    margin: 0px;
+    padding-top: 17%;
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    border-right: solid black 1px;
+    color: #941212;
+    border-bottom: solid #941212 20px;
+}
+.SIDES{
+    margin: 0px;
+    padding-top: 17%;
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    border-right: solid black 1px;
+}
+.DESSERTS{
+    margin: 0px;
+    padding-top: 17%;
+    grid-column: 3;
+    grid-row: 1;
+    text-align: center;
+    border-right: solid black 1px;
+}
+.DRINKS{
+    margin: 0px;
+    padding-top: 17%;
+    grid-column: 4;
+    grid-row: 1;
+    text-align: center;
+    border-right: solid black 1px;
+}
+.EXTRA{
+    margin: 0px;
+    padding-top: 17%;
+    grid-column: 5;
+    grid-row: 1;
+    text-align: center;
+    border-right: solid black 1px;
+}
+.POP{
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.PizzaList{
+    display: inline-block;
+    margin-left: 55px;
+    margin-bottom: 50px;
+    box-shadow: 12px 10px #C7BDBD;
+    grid-template-columns: 100%;
+    grid-template-rows: 90% 10%;
+    background: #FFFFFF;
+    width: 400px;
+}
+.PizzaIMG{
+    height: 300px;
+}
+.PizzaNAME{
+    margin: 0px;
+    font-size: 50px;
+}
