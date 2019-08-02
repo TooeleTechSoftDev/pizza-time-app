@@ -4,14 +4,17 @@
         border: 0;
         margin: 0;
 }
-
-
-    body {
-        background: #EFE6E6;
-        font-family: "Crimson Text";
-}
             
-
+    body {
+    margin: 0 auto;
+    border: 1px dashed black;
+    width: 750px;
+    height: 900px;
+    max-width: 750px;
+    background-color: #efe6e6;
+    font-family: "Crimson Text";
+    overflow: hidden;
+}
     .logo{
         margin-top: 0px;
         background: #FFFFFF;
@@ -27,12 +30,12 @@
 
 .special{
     display: inline-grid; 
-    grid-template-columns: 50% 50% ;
-    grid-template-rows: 50% 5% 25% 25%;
+    grid-template-columns: 40% 60% ;
+    grid-template-rows: 40% 5% 35% 20%;
     background: #941212;
     color: #FFFFFF;
     margin: 0px;
-    height: 250px;
+    height: 150px;
     width: 100%;
     overflow: hidden;
     margin-bottom: 0px;
@@ -51,7 +54,7 @@
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
-    font-size: 56px;
+    font-size: 35px;
     grid-column: 1;
     grid-row: 1;
 }
@@ -59,7 +62,7 @@
     margin-top: 12px;
     margin-bottom: 0px;
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
     grid-column: 1;
     grid-row: 3;
     border-top: solid #FFFFFF 4px;
@@ -73,21 +76,23 @@
     grid-row: 1/ span 3;
     float: right;
     object-position: 0px -68px;
-    width: 650px;
+    width: 800px;
     height: 500px;
 }
 .nav{
+    font-family: "Crimson Text";
     list-style-type:none;
     display: inline-grid; 
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 100%;
     margin: 0px;
     width: 100%;
-    height: 100PX;
+    height: 80PX;
     background: #C7BDBD;
     color: black;
     text-align: center;
     font-size: 30px;
+    font-weight: normal;
 }
 .PIZZA{
     margin: 0px;
@@ -98,6 +103,8 @@
     border-right: solid black 1px;
     color: #941212;
     border-bottom: solid #941212 20px;
+    font-family: "Crimson Text";
+    font-weight: normal;
 }
 .SIDES{
     margin: 0px;
@@ -106,6 +113,8 @@
     grid-row: 1;
     text-align: center;
     border-right: solid black 1px;
+    font-family: "Crimson Text";
+    font-weight: normal;
 }
 .DESSERTS{
     margin: 0px;
@@ -114,6 +123,8 @@
     grid-row: 1;
     text-align: center;
     border-right: solid black 1px;
+    font-family: "Crimson Text";
+    font-weight: normal;
 }
 .DRINKS{
     margin: 0px;
@@ -122,6 +133,8 @@
     grid-row: 1;
     text-align: center;
     border-right: solid black 1px;
+    font-family: "Crimson Text";
+    font-weight: normal;
 }
 .EXTRA{
     margin: 0px;
@@ -130,25 +143,67 @@
     grid-row: 1;
     text-align: center;
     border-right: solid black 1px;
+    font-family: "Crimson Text";
+    font-weight: normal;
 }
 .POP{
     margin-bottom: 20px;
     margin-top: 50px;
+    font-weight: normal;
+    font-family: "Crimson Text";
 }
 .PizzaList{
     display: inline-block;
-    margin-left: 55px;
-    margin-bottom: 50px;
     box-shadow: 12px 10px #C7BDBD;
     grid-template-columns: 100%;
     grid-template-rows: 90% 10%;
     background: #FFFFFF;
-    width: 400px;
+    width: 300px;
+    margin-left: 50px;
+    margin-bottom: 50px;
 }
 .PizzaIMG{
-    height: 300px;
+    height: 250px;
+    width: 300px;
 }
 .PizzaNAME{
     margin: 0px;
     font-size: 50px;
+}
+
+#footer {
+  opacity: 0.95;
+  background-color: #c7bdbd;
+  position: absolute;
+  bottom: 0;
+  width: 750px;
+  height: 70px;
+}
+.navbar {
+  line-height: 110px;
+  text-align: center;
+  float: left;
+  border: 1px solid black;
+  width: 185.5px;
+  height: 70px;
+}
+header {
+  width: 750px;
+  background: #ffffff;
+  height: 70px;
+  margin-top: 25px;
+}
+header img {
+  display: block;
+  margin: 0 auto 0 auto;
+}
+#Hamburger {
+  font-size: 50px;
+}
+.navbar i {
+  font-size: 35px;
+}
+.navbar p {
+  font-size: 20px;
+  margin: 0px;
 }
