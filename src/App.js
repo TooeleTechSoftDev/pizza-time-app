@@ -49,10 +49,10 @@ class App extends Component {
         }
 
         <div id="footer">
-          <div onClick={this.handleChoice.bind(this, "menu")} class="navbar"><i class="fa fa-home"><br /><p>Home</p></i></div>
-          <div onClick={this.handleChoice.bind(this, "specials")} class="navbar"><i class="fa fa-usd"><br /><p>Specials</p></i></div>
-          <div onClick={this.handleChoice.bind(this, "favorites")} class="navbar"><i class="fa fa-star"><br /><p>Favorites</p></i></div>
-          <div onClick={this.handleChoice.bind(this, "account")} class="navbar"><i class="fa fa-bars" id="Hamburger"></i></div>
+          <div onClick={this.handleChoice.bind(this, "menu")} className="navbar"><i class="fa fa-home"><br /><p>Home</p></i></div>
+          <div onClick={this.handleChoice.bind(this, "specials")} className="navbar"><i class="fa fa-usd"><br /><p>Specials</p></i></div>
+          <div onClick={this.handleChoice.bind(this, "favorites")} className="navbar"><i class="fa fa-star"><br /><p>Favorites</p></i></div>
+          <div onClick={this.handleChoice.bind(this, "account")} className="navbar"><i class="fa fa-bars" id="Hamburger"></i></div>
         </div>
 
       </div>
