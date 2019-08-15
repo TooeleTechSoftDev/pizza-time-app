@@ -1,6 +1,6 @@
 import 'whatwg-fetch';
 
-const serverURL = "http://localhost:8080"
+const serverURL = "http://localhost:8088"
 
 class PizzaTimeServer {
 
