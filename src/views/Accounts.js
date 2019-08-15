@@ -5,6 +5,7 @@ export default class Specials extends Component {
 
     constructor(props) {
         super(props)
+        
     }
 
     render() {
