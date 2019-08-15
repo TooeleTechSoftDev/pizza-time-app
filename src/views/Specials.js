@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 import './Specials.css';
 
 
+import { pizzaTimeServer } from '../helpers/pizzaapi'
+
 export default class Specials extends Component {
 
     constructor(props) {
         super(props)
         // this.props.clickFunc contains what to do when we click something
+        this.state = { page: { title: "", description: ""} }
+        pizzaTimeServer.fetchPage(1,(pageJSON) => this.setState({page: pageJSON}))
     }
 
     ourChoice(choice) {
