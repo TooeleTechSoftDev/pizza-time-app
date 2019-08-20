@@ -1,21 +1,18 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 //import './deals.css';
 
-import { pizzaTimeServer } from '../helpers/pizzaapi'
+import { pizzaTimeServer } from "../helpers/pizzaapi";
 
 export default class Menu extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { page: { title: "", description: "" } };
+    pizzaTimeServer.fetchPage(1, pageJSON => this.setState({ page: pageJSON }));
+  }
 
-    constructor(props) {
-        super(props)
-        this.state = { page: { title: "", description: ""} }
-        pizzaTimeServer.fetchPage(1,(pageJSON) => this.setState({page: pageJSON}))
-    }
-
-    render() {
-
-        return (
-      <div >
-        
+  render() {
+    return (
+      <div>
         <div>{this.state.page.description}</div>
         <div className="special">
           <h2 className="SpecialName">LARGE 18" SUPREME</h2>
@@ -30,7 +27,9 @@ export default class Menu extends Component {
           <h4 className="EXTRA">EXTRA</h4>
         </div>
         <div>
-          <center><h2 className="POP"> Popular Pizza</h2></center>
+          <center>
+            <h2 className="POP"> Popular Pizza</h2>
+          </center>
         </div>
         <div className="PizzaList">
           <img className="PizzaIMG" src="image/CHZ.jpg" alt="PIZZA" />
@@ -49,8 +48,6 @@ export default class Menu extends Component {
           <h3 className="PizzaNAME">Hawaiian</h3>
         </div>
       </div>
-    )
-    }
+    );
+  }
 }
-
-
