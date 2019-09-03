@@ -6,9 +6,15 @@ import Accounts from "./views/Accounts";
 import Menu from "./views/Menu";
 import Favorites from "./views/Favorites";
 import Orders from "./views/Orders";
-import Signin from "./views/signin";
 import ItemDetail from "./views/ItemDetail";
-import "../src/css/App.css";
+import SideBar from "./Sidebar";
+import SignIn from "./views/Sidebar/SignIn";
+import CreateAccount from "./views/Sidebar/CreateAccount";
+import ChangeStore from "./views/Sidebar/ChangeStore";
+import AccountInfo from "./views/Sidebar/AccountInfo";
+import About from "./views/Sidebar/About";
+import ContactUs from "./views/Sidebar/ContactUs";
+import "../src/css/App.scss";
 
 // Very simple layout for now; Eventually need to set up navigation
 class App extends Component {
@@ -47,8 +53,14 @@ class App extends Component {
               menu: <Menu />,
               favorites: <Favorites />,
               account: <Accounts />,
-              signin: <Signin />,
-              itemDetail: <ItemDetail />
+              itemDetail: <ItemDetail />,
+              sidebar: <SideBar handleChoice={this.handleChoice} />,
+              signin: <SignIn handleChoice={this.handleChoice} />,
+              createaccount: <CreateAccount handleChoice={this.handleChoice} />,
+              accountinfo: <AccountInfo handleChoice={this.handleChoice} />,
+              changestore: <ChangeStore handleChoice={this.handleChoice} />,
+              about: <About handleChoice={this.handleChoice} />,
+              contactus: <ContactUs handleChoice={this.handleChoice} />
             }[this.state.viewShowing]
           }
         </div>
@@ -81,7 +93,7 @@ class App extends Component {
             </i>
           </div>
           <div
-            onClick={this.handleChoice.bind(this, "account")}
+            onClick={this.handleChoice.bind(this, "sidebar")}
             className="navbar"
           >
             <i className="fa fa-bars" id="Hamburger" />
