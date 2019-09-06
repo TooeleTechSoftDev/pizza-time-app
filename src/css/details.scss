@@ -1,0 +1,157 @@
+/* Boiler Plate  CSS*/
+.header {
+  height: 355px;
+}
+/* Item Details CSS */
+.PizzaPic {
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  height: 350px;
+  box-shadow: 1px 7px #9c9b9b;
+}
+.bottom-left {
+  position: relative;
+  bottom: 130px;
+  left: 10px;
+  font-size: 50px;
+  font-weight: 400;
+  color: white;
+  font-family: "crimson text";
+}
+.bottom-left-lower {
+  position: relative;
+  bottom: 130px;
+  left: 10px;
+  font-size: 40px;
+  font-weight: normal;
+  color: white;
+  font-family: "crimson text";
+}
+/* Item detail section */
+.Detailcontainer {
+  margin: 0 auto;
+  height: 458px;
+  width: 97%;
+  background-color: white;
+  box-shadow: 8px 9px #9c9b9b;
+}
+.Detailtitle {
+  font-weight: normal;
+  color: black;
+  font-family: "crimson text";
+  margin: 15px 0px 0px 10px;
+  font-size: 35px;
+}
+.Detailtext {
+  font-weight: normal;
+  color: black;
+  font-family: "crimson text";
+  margin: 15px 0px 0px 10px;
+  font-size: 25px;
+}
+.ChoiceBar {
+  margin: 0 auto;
+  display: flex;
+  height: 55px;
+  width: 50%;
+  background: white;
+  border: 1px solid black;
+}
+.ChoiceBar span {
+  margin: 0px;
+  font-size: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.minus {
+  margin: 0px;
+  width: 60px;
+  height: 55px;
+  background: #6a6868;
+  font-size: 25px;
+  color: white;
+  border: 0px;
+  cursor: pointer;
+}
+.plus {
+  margin: 0px;
+  width: 60px;
+  height: 55px;
+  background: #941212;
+  font-size: 25px;
+  color: white;
+  border: 0px;
+  cursor: pointer;
+}
+.addCart {
+  width: 220px;
+  height: 55px;
+  background: #941212;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+.pizzaSize {
+  font-weight: normal;
+  color: black;
+  font-family: "crimson text";
+  margin: 10px 0px 0px 10px;
+  font-size: 30px;
+}
+.pizzaQuantity {
+  font-weight: normal;
+  color: black;
+  font-family: "crimson text";
+  margin: 10px 0px 0px 10px;
+  font-size: 30px;
+}
+.ViewOrder {
+  margin: 20px 0px 0px 250px;
+  width: 220px;
+  height: 55px;
+  background: #941212;
+  font-size: 25px;
+  color: white;
+  border: 0px;
+  cursor: pointer;
+}
+/* cart Container code */
+.cartcontainer {
+  background-color: white;
+  margin: 22px 0px 0px 10px;
+  height: 79px;
+  width: 97%;
+  font-weight: normal;
+  color: black;
+  font-family: "crimson text";
+  padding: 0px;
+  font-size: 35px;
+}
+.ViewCart {
+  margin: 8px 0px 0px 160px;
+  width: 220px;
+  height: 65px;
+  background: #c9bdbd;
+  font-size: 25px;
+  color: white;
+  border: 0px;
+  cursor: pointer;
+}
+.storeLoc {
+  margin: -70px 0px 0px 580px;
+  color: #0e760e;
+  font-size: 20px;
+}
+.storeLoc2 {
+  margin: -5px 0px 0px 580px;
+  color: black;
+  font-size: 20px;
+}
+.price {
+  color: green;
+  margin: 9px 0px 0px 10px;
+  padding: 0px;
+  width: 100px;
+  float: left;
+  font-size: 45px;
+}
