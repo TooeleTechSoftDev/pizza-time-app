@@ -1,0 +1,266 @@
+body {
+  margin: 0 auto;
+  border: 1px dashed black;
+  width: 750px;
+  height: 900px;
+  max-width: 750px;
+  background-color: #efe6e6;
+  font-family: "Crimson Text";
+}
+.order{
+    display: inline-grid; 
+    grid-template-columns: 30% 5% 30% 5% 30%;
+    grid-template-rows: 2% 96% 2%;
+    background-color: #FFFFFF;
+    height: 100px;
+    width: 100%;
+    margin-top: 10px;
+}
+.OrderReview{
+    font-family: "Crimson Text";
+    grid-row: 2;
+    grid-column: 1;
+    margin-left: 5px;
+    background-color: #C7BDBD;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 10px;
+    font-size: 23px;
+}
+.AR{
+    font-family: "Crimson Text";
+    grid-row: 2;
+    grid-column: 2;
+    font-size: 70px;
+    padding-top: 0px;
+    margin-top: 6px;
+    margin-left: 0px;
+    
+}
+.Delivery{
+    font-family: "Crimson Text";
+    grid-row: 2;
+    grid-column: 3;
+    background-color: #941212;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 10px;
+    font-size: 23px;
+    color: #FFFFFF;
+}
+.AR2{
+    font-family: "Crimson Text";
+    grid-row: 2;
+    grid-column: 4;
+    font-size: 70px;
+    padding-top: 0px;
+    margin-top: 6px;
+    margin-left: 0px;
+}
+.Payment{
+    font-family: "Crimson Text";
+    grid-row: 2;
+    grid-column: 5;
+    background-color: #C7BDBD;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 10px;
+    font-size: 23px;
+    margin-right: 5px;
+
+}
+#footer {
+  opacity: 0.95;
+  background-color: #c7bdbd;
+  position: absolute;
+  bottom: 0;
+  width: 750px;
+  height: 70px;
+}
+.navbar {
+  line-height: 110px;
+  text-align: center;
+  float: left;
+  border: 1px solid black;
+  width: 185.5px;
+  height: 70px;
+}
+header {
+  width: 750px;
+  background: #ffffff;
+  height: 70px;
+  margin-top: 25px;
+}
+header img {
+  display: block;
+  margin: 0 auto 0 auto;
+}
+#Hamburger {
+  font-size: 50px;
+}
+.navbar i {
+  font-size: 35px;
+}
+.navbar p {
+  font-size: 20px;
+  margin: 0px;
+}
+.customerInfo{
+    font-family: "Crimson Text";
+    display: inline-grid; 
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 10% 10% 30% 30%;
+    background-color: #FFFFFF;
+    margin-left: 11px;
+    margin-top: 15px;
+    width: 97%;
+    height: 25%;
+    box-shadow: 5px 5px #C7BDBD;
+    
+    
+}
+.ID{
+    font-family: "Crimson Text";
+    font-size:30px;
+    margin-left: 15px;
+    grid-row: 1;
+    grid-column: 1/3;
+}
+.CatN{
+    font-family: "Crimson Text";
+    font-weight: 100;
+    margin-left: 15px;
+    grid-row: 2;
+    grid-column: 1/3;
+    font-size: 29px;
+}
+.CatP{
+    font-family: "Crimson Text";
+    font-weight: 100;
+    margin-left: 15px;
+    grid-row: 3;
+    grid-column: 1/3;
+    font-size: 29px;
+}
+.CatE{
+    font-family: "Crimson Text";
+    font-weight: 100;
+    margin-left: 15px;
+    grid-row: 4;
+    grid-column: 1/3;
+    font-size: 29px;
+}
+.CustName{
+    font-family: "Crimson Text";
+    font-weight: 100;
+    grid-row: 2;
+    grid-column: 4;
+    text-align: right;
+    font-size: 29px;
+}
+.CustPhone{
+    font-family: "Crimson Text";
+    font-weight: 100;
+    grid-row: 3;
+    grid-column: 4;
+    text-align: right;
+    font-size: 29px;
+    
+}
+.CustEmail{
+    font-family: "Crimson Text";
+    font-weight: 100;
+    grid-row: 4;
+    grid-column: 3/ span 4;
+    text-align: right;
+    font-size: 29px;
+    
+    
+}
+.Edit{
+    font-family: "Crimson Text";
+    font-weight: 100;
+    background-color: #941212;
+    color: #FFFFFF;
+    font-size: 35px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    grid-row: 5;
+    grid-column: 4;
+}
+.PickUP{
+    font-family: "Crimson Text";
+    display: inline-grid; 
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 10% 10% 30% 30%;
+    background-color: #FFFFFF;
+    margin-left: 11px;
+    margin-top: 15px;
+    width: 97%;
+    height: 25%;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px #C7BDBD;
+}
+.Pick{
+    font-family: "Crimson Text";
+    grid-row: 1;
+    grid-column: 1/3;
+    margin-left: 15px;
+    font-size: 35px;
+}
+
+.Hours{
+    font-family: "Crimson Text";
+    font-weight: 100;
+    grid-row: 2;
+    grid-column: 1/2;
+    margin-left: 15px;
+    font-size: 29px;
+}
+.Wait{
+    font-family: "Crimson Text";
+    font-weight: 100;
+    grid-row: 4;
+    grid-column: 1/ span 2;
+    margin-left: 15px;
+    font-size: 29px;
+}
+.STHours{
+    font-family: "Crimson Text";
+    font-weight: 100;
+    grid-row: 2;
+    grid-column: 4;
+    text-align: right;
+    font-size: 29px;
+}
+.WTHours{
+    font-family: "Crimson Text";
+    font-weight: 100;
+    grid-row: 4;
+    grid-column: 4;
+    text-align: right;
+    font-size: 29px;
+}
+
+
+.GoBack{
+    background-color: #C7BDBD;
+    float:left;
+    width: 150px;
+    height: 50px;
+    margin-top: 20%;
+    margin-left: 15px;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+.PaymentOPT{
+    background-color: #0E760E;
+    float: right;
+    width:150px;
+    height: 50px;
+    margin-top: 20%;
+    margin-right: 15px;
+    color: #ffffff;
+    font-size: 18px;
+}

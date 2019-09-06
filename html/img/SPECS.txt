@@ -1,0 +1,13 @@
+Border radius on big buttons — 20px
+Border radius on smaller buttons — 10px
+Font Family — Crimson Text
+
+
+#EFE6E6 — White used for background
+#FFFFFF — White background for boxes and for white text
+#C7BDBD — Background for most food items
+#941212 — red background for banner Item
+#0E760E — green color used for Increase the product count and Also used for add to cart.
+#ED1C24 — red used for the minus symbols only (decrease product count)
+#000000 — used for any black text in the project.
+#6A6868 — Minus buttons
