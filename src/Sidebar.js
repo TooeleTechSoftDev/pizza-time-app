@@ -5,7 +5,6 @@ class Sidebar extends Component {
   render() {
     return (
       <div className="options">
-        {}
         <span onClick={this.props.handleChoice.bind(this, "signin")}>
           Sign In
         </span>
@@ -17,6 +16,9 @@ class Sidebar extends Component {
         </span>
         <span onClick={this.props.handleChoice.bind(this, "changestore")}>
           Change Store
+        </span>
+        <span onClick={this.props.handleChoice.bind(this, "orderreview")}>
+          Order Review
         </span>
         <div className="line">
           <hr></hr>

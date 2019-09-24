@@ -2,6 +2,11 @@
 .header {
   height: 355px;
 }
+.ItemContainer span {
+  font-family: "Crimson Text";
+  font-weight: 300;
+}
+
 /* Item Details CSS */
 .PizzaPic {
   margin: 0px 0px 0px 0px;
@@ -84,12 +89,14 @@
   cursor: pointer;
 }
 .addCart {
+  display: block;
   width: 220px;
   height: 55px;
   background: #941212;
   font-size: 25px;
   color: white;
   cursor: pointer;
+  margin: 10px auto;
 }
 .pizzaSize {
   font-weight: normal;
