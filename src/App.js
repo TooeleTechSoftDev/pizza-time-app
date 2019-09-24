@@ -14,6 +14,7 @@ import ChangeStore from "./views/Sidebar/ChangeStore";
 import AccountInfo from "./views/Sidebar/AccountInfo";
 import About from "./views/Sidebar/About";
 import ContactUs from "./views/Sidebar/ContactUs";
+import OrderReview from "./views/Cart/OrderReview";
 import "../src/css/App.scss";
 
 // Very simple layout for now; Eventually need to set up navigation
@@ -21,9 +22,10 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { viewShowing: "menu" };
+    this.state = { viewShowing: "menu", itemId: "1000" };
 
     this.handleChoice = this.handleChoice.bind(this);
+    //this.handleMenuItem = this.handleMenuItem.bind(this);
   }
 
   handleChoice(choice) {
@@ -31,6 +33,10 @@ class App extends Component {
     this.setState({ viewShowing: choice });
   }
 
+  handleMenuItem(itemId) {
+    console.log("item chosen: ", itemId);
+    this.setState({ viewShowing: "itemDetail", itemId });
+  }
   render() {
     // See https://stackoverflow.com/questions/37782776/using-for-loops-and-switch-cases-in-react-to-dynamically-render-different-compon
     // for questions regarding the use of an object enumeration as a cheap "switch" statement
@@ -60,7 +66,8 @@ class App extends Component {
               accountinfo: <AccountInfo handleChoice={this.handleChoice} />,
               changestore: <ChangeStore handleChoice={this.handleChoice} />,
               about: <About handleChoice={this.handleChoice} />,
-              contactus: <ContactUs handleChoice={this.handleChoice} />
+              contactus: <ContactUs handleChoice={this.handleChoice} />,
+              orderreview: <OrderReview handleChoice={this.handleChoice} />
             }[this.state.viewShowing]
           }
         </div>
@@ -84,7 +91,7 @@ class App extends Component {
             </i>
           </div>
           <div
-            onClick={this.handleChoice.bind(this, "favorites")}
+            onClick={this.handleChoice.bind(this, "orderreview")}
             className="navbar"
           >
             <i className="fa fa-star">
