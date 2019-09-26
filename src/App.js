@@ -22,21 +22,17 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { viewShowing: "menu", itemId: "1000" };
+    this.state = { viewShowing: "menu", data: {} };
 
     this.handleChoice = this.handleChoice.bind(this);
     //this.handleMenuItem = this.handleMenuItem.bind(this);
   }
 
-  handleChoice(choice) {
+  handleChoice(choice, data) {
     console.log("choice clicked: ", choice);
-    this.setState({ viewShowing: choice });
+    this.setState({ viewShowing: choice, viewData: data });
   }
 
-  handleMenuItem(itemId) {
-    console.log("item chosen: ", itemId);
-    this.setState({ viewShowing: "itemDetail", itemId });
-  }
   render() {
     // See https://stackoverflow.com/questions/37782776/using-for-loops-and-switch-cases-in-react-to-dynamically-render-different-compon
     // for questions regarding the use of an object enumeration as a cheap "switch" statement
@@ -56,10 +52,10 @@ class App extends Component {
               ),
               orders: <Orders />,
               orderForm: <OrderForm />,
-              menu: <Menu />,
+              menu: <Menu handleChoice={this.handleChoice} />,
               favorites: <Favorites />,
               account: <Accounts />,
-              itemDetail: <ItemDetail />,
+              itemDetail: <ItemDetail data={this.state.viewData} />,
               sidebar: <SideBar handleChoice={this.handleChoice} />,
               signin: <SignIn handleChoice={this.handleChoice} />,
               createaccount: <CreateAccount handleChoice={this.handleChoice} />,
