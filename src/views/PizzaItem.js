@@ -1,17 +1,29 @@
-import React from "react";
+import React, { Component } from "react";
 import "../css/PizzaItem.scss";
+import ItemDetail from "./ItemDetail";
 
-function PizzaItem(props) {
-  function box(e) {
-    console.log("THIS IS WORKING AS INTENDED");
-    console.log(props.id);
+class PizzaItem extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {};
   }
-  return (
-    <div className="PizzaList" onClick={box}>
-      <img className="PizzaIMG" src={props.imgUrl} alt="PIZZA" />
-      <h3 className="PizzaNAME">{props.title}</h3>
-    </div>
-  );
+
+  render() {
+    return (
+      <div className="PizzaList" onClick={this.props.onClick}>
+        <img className="PizzaIMG" src={this.props.imgUrl} alt="PIZZA" />
+        <h3 className="PizzaNAME">{this.props.title}</h3>
+        {this.props.expanded ? (
+          <>
+            <ItemDetail />
+          </>
+        ) : (
+          <></>
+        )}
+      </div>
+    );
+  }
 }
 
 export default PizzaItem;

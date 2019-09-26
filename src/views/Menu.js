@@ -9,7 +9,9 @@ export default class Menu extends Component {
     super(props);
     this.state = { page: { title: "", description: "" }, tabIndex: 0 };
     pizzaTimeServer.fetchPage(1, pageJSON => this.setState({ page: pageJSON }));
+    this.handleChoice = this.props.handleChoice.bind(this);
   }
+
   render() {
     return (
       <div>
@@ -34,11 +36,56 @@ export default class Menu extends Component {
             <TabPanel>
               <div className="wrapdiv">
                 <h2 className="PopularTitle">Popular Pizza</h2>
-                <PizzaItem imgUrl="image/CHZ.jpg" title="Cheese" id="1" />
-                <PizzaItem imgUrl="image/SUP.jpg" title="Veggie" id="2" />
-                <PizzaItem imgUrl="image/CHZ.jpg" title="Cheese" id="3" />
-                <PizzaItem imgUrl="image/SUP.jpg" title="Veggie" id="4" />
-                <PizzaItem imgUrl="image/CHZ.jpg" title="Cheese" id="5" />
+                <PizzaItem
+                  imgUrl="image/CHZ.jpg"
+                  title="Cheese"
+                  id="1"
+                  onClick={() => {
+                    this.handleChoice("itemDetail", {
+                      itemId: 127
+                    });
+                  }}
+                />
+                <PizzaItem
+                  imgUrl="image/SUP.jpg"
+                  title="Veggie"
+                  id="2"
+                  onClick={() => {
+                    this.handleChoice("itemDetail", {
+                      itemId: 125
+                    });
+                  }}
+                />
+                <PizzaItem
+                  imgUrl="image/CHZ.jpg"
+                  title="Cheese"
+                  id="3"
+                  onClick={() => {
+                    this.handleChoice("itemDetail", {
+                      itemId: 14
+                    });
+                  }}
+                />
+                <PizzaItem
+                  imgUrl="image/SUP.jpg"
+                  title="Veggie"
+                  id="4"
+                  onClick={() => {
+                    this.handleChoice("itemDetail", {
+                      itemId: 12
+                    });
+                  }}
+                />
+                <PizzaItem
+                  imgUrl="image/CHZ.jpg"
+                  title="Cheese"
+                  id="5"
+                  onClick={() => {
+                    this.handleChoice("itemDetail", {
+                      itemId: 13
+                    });
+                  }}
+                />
               </div>
             </TabPanel>
             <TabPanel>
