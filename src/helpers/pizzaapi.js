@@ -7,7 +7,7 @@ class PizzaTimeServer {
   fetchPage(pageNum, cb) {
     fetch(serverURL + "/pg/" + pageNum)
       .then(response => response.json()) // get the json out of the response
-      .then(json => cb(json.returned)) // parse the json and return it
+      .then(json => cb(json)) // parse the json and return it
       .catch(error => {
         console.log("Error: ", error);
       }); // handle the error
@@ -17,7 +17,7 @@ class PizzaTimeServer {
   fetchProduct(productNum, cb) {
     fetch(serverURL + "/prod/" + productNum)
       .then(response => response.json()) // get the json out of the response
-      .then(json => cb(json.returned)) // parse the json and return it
+      .then(json => cb(json) ) // parse the json and return it
       .catch(error => {
         console.log("Error: ", error);
       }); // handle the error
@@ -27,7 +27,7 @@ class PizzaTimeServer {
   fetchAccount(accountNum, cb) {
     fetch(serverURL + "/acct/" + accountNum)
       .then(response => response.json()) // get the json out of the response
-      .then(json => cb(json.returned)) // parse the json and return it
+      .then(json => cb(json)) // parse the json and return it
       .catch(error => {
         console.log("Error: ", error);
       }); // handle the error
@@ -63,7 +63,7 @@ class PizzaTimeServer {
   fetchOrder(orderNum, cb) {
     fetch(serverURL + "/ord/" + orderNum)
       .then(response => response.json()) // get the json out of the response
-      .then(json => cb(json.returned)) // parse the json and return it
+      .then(json => cb(json)) // parse the json and return it
       .catch(error => {
         console.log("Error: ", error);
       }); // handle the error

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Pizza from "../../images/PizzaDetail.jpg";
+import { pizzaTimeServer } from "../../helpers/pizzaapi";
 
 class Item extends Component {
   constructor(props) {
@@ -19,8 +20,15 @@ class Item extends Component {
       clicks: 0,
       show: true,
       size: 1,
-      current: 0
+      current: 0,
+      prodData: { name: "", size: "", description: "", price: 0, imgUrl: ""}
     };
+  }
+
+  componentDidMount() {
+    pizzaTimeServer.fetchProduct(this.props.itemId, (prodData) => {
+        this.setState({prodData})
+    })
   }
 
   NextPizza = () => {
@@ -60,12 +68,15 @@ class Item extends Component {
     this.setState({ show: !this.state.show });
   };
   render() {
+
+    let prodData = this.state.prodData
+
     return (
       <div className="ItemContainer" onClick={this.props.onClick}>
         <div className="header">
           <img className="PizzaPic" src={Pizza} alt="Supreme Pizza" />
-          <div className="bottom-left">{this.props.pizzaTitle}</div>
-          <div className="bottom-left-lower">{this.props.pizzaDetail}</div>
+          <div className="bottom-left">{prodData.name}</div>
+          <div className="bottom-left-lower">{prodData.description}</div>
         </div>
         <div className="Detailcontainer">
           <div>
@@ -73,11 +84,10 @@ class Item extends Component {
               {this.state.show ? "Hide number" : "Show number"}
             </button>
           </div>
-          <div className="Detailtitle">Item Detail</div>
-          {this.props.itemId}
+          <div className="Detailtitle">{prodData.name}</div>
+          
           <div className="Detailtext">
-            Pepperoni, real cheese made from mozzarella, onion, mushroom, green
-            bell pepper, sausage and black olive
+          {prodData.description}
           </div>
           {/* This changes the type of pizza that you are ordering with an array based on pizza clicked. */}
           <div className="pizzaSize">Pizza Size</div>

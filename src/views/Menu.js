@@ -42,7 +42,7 @@ export default class Menu extends Component {
                   id="1"
                   onClick={() => {
                     this.handleChoice("itemDetail", {
-                      itemId: 127
+                      itemId: 789
                     });
                   }}
                 />
@@ -52,7 +52,7 @@ export default class Menu extends Component {
                   id="2"
                   onClick={() => {
                     this.handleChoice("itemDetail", {
-                      itemId: 125
+                      itemId: 123
                     });
                   }}
                 />
@@ -62,7 +62,7 @@ export default class Menu extends Component {
                   id="3"
                   onClick={() => {
                     this.handleChoice("itemDetail", {
-                      itemId: 14
+                      itemId: 1024
                     });
                   }}
                 />
@@ -72,7 +72,7 @@ export default class Menu extends Component {
                   id="4"
                   onClick={() => {
                     this.handleChoice("itemDetail", {
-                      itemId: 12
+                      itemId: 154
                     });
                   }}
                 />
@@ -82,7 +82,7 @@ export default class Menu extends Component {
                   id="5"
                   onClick={() => {
                     this.handleChoice("itemDetail", {
-                      itemId: 13
+                      itemId: 132
                     });
                   }}
                 />
