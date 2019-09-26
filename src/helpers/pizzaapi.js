@@ -5,7 +5,7 @@ const serverURL = "http://localhost:8088";
 class PizzaTimeServer {
   // Page call
   fetchPage(pageNum, cb) {
-    fetch(serverURL + "/pages/detail/" + pageNum)
+    fetch(serverURL + "/pg/" + pageNum)
       .then(response => response.json()) // get the json out of the response
       .then(json => cb(json.returned)) // parse the json and return it
       .catch(error => {
@@ -15,7 +15,7 @@ class PizzaTimeServer {
 
   // Product call
   fetchProduct(productNum, cb) {
-    fetch(serverURL + "/product/detail/" + productNum)
+    fetch(serverURL + "/prod/" + productNum)
       .then(response => response.json()) // get the json out of the response
       .then(json => cb(json.returned)) // parse the json and return it
       .catch(error => {
@@ -25,7 +25,7 @@ class PizzaTimeServer {
 
   // Account calls
   fetchAccount(accountNum, cb) {
-    fetch(serverURL + "/account/detail/" + accountNum)
+    fetch(serverURL + "/acct/" + accountNum)
       .then(response => response.json()) // get the json out of the response
       .then(json => cb(json.returned)) // parse the json and return it
       .catch(error => {
@@ -34,7 +34,7 @@ class PizzaTimeServer {
   }
 
   updateAccount(accountObject, cb) {
-    fetch(serverURL + "/account/change/" + accountObject.accountNum, {
+    fetch(serverURL + "/acct/change/" + accountObject.accountNum, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(accountObject)
@@ -47,7 +47,7 @@ class PizzaTimeServer {
   }
 
   submitAccount(accountObject, cb) {
-    fetch(serverURL + "/account/newuser", {
+    fetch(serverURL + "/acct/newaccount", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(accountObject)
@@ -61,7 +61,7 @@ class PizzaTimeServer {
 
   // Order calls
   fetchOrder(orderNum, cb) {
-    fetch(serverURL + "/order/detail/" + orderNum)
+    fetch(serverURL + "/ord/" + orderNum)
       .then(response => response.json()) // get the json out of the response
       .then(json => cb(json.returned)) // parse the json and return it
       .catch(error => {
@@ -70,7 +70,7 @@ class PizzaTimeServer {
   }
 
   submitOrder(orderObject, cb) {
-    fetch(serverURL + "/order/newitem", {
+    fetch(serverURL + "/ord/new", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(orderObject)
@@ -83,7 +83,7 @@ class PizzaTimeServer {
   }
 
   updateOrder(orderObject, cb) {
-    fetch(serverURL + "/order/change/" + orderObject.orderNum, {
+    fetch(serverURL + "/ord/change/" + orderObject.orderNum, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(orderObject)
